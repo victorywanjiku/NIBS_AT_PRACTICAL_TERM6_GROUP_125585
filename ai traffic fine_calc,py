@@ -1,0 +1,21 @@
+#Traffic fine calc
+vNo=input("enter vehicle_number:")
+speed=float(input("enter speed(km/h):"))
+if speed<=80:
+    fine=0
+    advice="No fine_drive safely"
+elif  81 <=speed<=100:
+    fine=3000
+    advice="reduce speed"
+elif 101<=speed<=120:
+    fine=7000
+    advice="High speed"
+else:
+    fine=15000
+    advice= "Dangerous speed__slow down"  
+
+    
+print(f"\nvNo:{vNo}")
+print(f"speed:{speed}")
+print(f"fine:{fine}")
+print(f"Advice:{advice}")
